@@ -1,0 +1,21 @@
+
+
+spring:
+  application:
+    name: SpringBootRest
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: kittu
+    password: aniil
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+        formatsql: true
+    show-sql: true
+
+server:
+  port: 1000
